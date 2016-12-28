@@ -4,6 +4,8 @@
 
 ## Feature
 
+## not include
+- redux async (这个之后加上)
 ## support
 
 ## main lib 
@@ -12,22 +14,28 @@
 - webpack
 - react-router
 - react-redux
+- react-redux-router
 
 
 ## Don't support 
+- 
 
 ## how to run
 first
 ```
-$ npm install
+$ yarn install
 ```
 
 and then
 
 ```
-$ npm start
+$ yarn start
 ```
 
+before you commit
+```
+$ yarn test
+```
 ## version
 
 ## This project
