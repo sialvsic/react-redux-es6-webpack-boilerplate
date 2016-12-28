@@ -62,7 +62,7 @@
     "cacheDirectory": "/tmp/jest/",
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/app/**/*",
+      "src/**/*",
       "!**/node_modules/**",
       "!**/vendor/**"
     ]

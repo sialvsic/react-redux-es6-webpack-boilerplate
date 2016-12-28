@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux'
-import { Provider } from 'react-redux'
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import App from './containers/App';
-import reducer from './reducers'
+import reducer from './reducers';
 import './Stylesheet/index.scss';
 
-const store = createStore(reducer)
+const store = createStore(reducer);
 
 class Root extends React.Component {
   render() {
