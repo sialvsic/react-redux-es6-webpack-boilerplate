@@ -22,18 +22,18 @@ Config for:
 ## how to start
 first
 ```
-$ yarn install
+$ npm install
 ```
 
 and then
 
 ```
-$ yarn start
+$ npm start
 ```
 
 before you commit
 ```
-$ yarn test
+$ npm test
 ```
 
 ## version
