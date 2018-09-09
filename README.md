@@ -1,26 +1,24 @@
 # What is this?
 
-> This is a webpack set up demo And also a react + redux + es6 +  webpack project boilerplate
+> This project is aim to always using the all the latest configuration to run the `Todolist` app.
+
+Config for:
+- Webpack
+  - dev/prod
+  - dev-server
+- Babel
+- eslint
 
 ## Feature
 
-## not include
-- redux async (这个之后加上)
-## support
-
 ## main lib 
-- react 
-- redux
-- webpack
-- react-router
-- react-redux
-- react-redux-router
+- React.js
+- Redux
+- Webpack
+- Babel
 
 
-## Don't support 
-- 
-
-## how to run
+## how to start
 first
 ```
 $ yarn install
@@ -36,10 +34,8 @@ before you commit
 ```
 $ yarn test
 ```
+
 ## version
-
-## This project
-
-此项目底层的参考使用https://github.com/sialvsic/webpack-demo 搭好的webpack的骨架
-本项目实现的是一个基本的ToDoList
+2018.09.09 upgrade the project package to all latest version
+- React.js   
 
