@@ -16,6 +16,7 @@ Config for:
 - Redux
 - Webpack
 - Babel
+- Enzyme
 
 
 ## how to start
@@ -37,5 +38,8 @@ $ yarn test
 
 ## version
 2018.09.09 upgrade the project package to all latest version
-- React.js   
+- React.js from V15 to V16
+- Babel from V6 to V7
+- Webpack from V1 to V4
+- 
 
