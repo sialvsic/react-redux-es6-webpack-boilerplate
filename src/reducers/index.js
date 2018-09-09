@@ -4,7 +4,7 @@ import todos from './todos';
 
 const rootReducer = combineReducers({
   routing: routerReducer,
-  todos
+  todos,
 });
 
 export default rootReducer;

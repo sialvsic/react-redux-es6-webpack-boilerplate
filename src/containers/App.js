@@ -8,22 +8,22 @@ import * as TodoActions from '../actions';
 
 const App = ({ todos, actions }) => (
   <div>
-    <Header addTodo={actions.addTodo} />
-    <MainSection todos={todos} actions={actions} />
+    <Header addTodo={ actions.addTodo } />
+    <MainSection todos={ todos } actions={ actions } />
   </div>
 );
 
 App.propTypes = {
   todos: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
+  actions: PropTypes.object.isRequired,
 };
 
 const mapStateToProps = state => ({
-  todos: state.todos
+  todos: state.todos,
 });
 
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(TodoActions, dispatch)
+  actions: bindActionCreators(TodoActions, dispatch),
 });
 
 export default connect(

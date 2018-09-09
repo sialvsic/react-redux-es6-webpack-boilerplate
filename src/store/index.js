@@ -22,4 +22,3 @@ const getStoreInstance = function() {
 };
 
 export default getStoreInstance;
-

@@ -7,7 +7,7 @@ export default class TodoTextInput extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: this.props.text || ''
+      text: this.props.text || '',
     };
     this.handleBlur = this.handleBlur.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,24 +39,23 @@ export default class TodoTextInput extends Component {
       <input className={
         classnames({
           edit: this.props.editing,
-          'new-todo': this.props.newTodo
-        })}
-        type="text"
-        placeholder={this.props.placeholder}
-        autoFocus={true}
-        value={this.state.text}
-        onBlur={this.handleBlur}
-        onChange={this.handleChange}
-        onKeyDown={this.handleSubmit} />
+          'new-todo': this.props.newTodo,
+        }) }
+      type="text"
+      placeholder={ this.props.placeholder }
+      autoFocus={ true }
+      value={ this.state.text }
+      onBlur={ this.handleBlur }
+      onChange={ this.handleChange }
+      onKeyDown={ this.handleSubmit } />
     );
   }
 }
-
 
 TodoTextInput.propTypes = {
   onSave: PropTypes.func.isRequired,
   text: PropTypes.string,
   placeholder: PropTypes.string,
   editing: PropTypes.bool,
-  newTodo: PropTypes.bool
+  newTodo: PropTypes.bool,
 };

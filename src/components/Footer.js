@@ -6,7 +6,7 @@ import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/TodoFilters'
 const FILTER_TITLES = {
   [SHOW_ALL]: 'All',
   [SHOW_ACTIVE]: 'Active',
-  [SHOW_COMPLETED]: 'Completed'
+  [SHOW_COMPLETED]: 'Completed',
 };
 
 export default class Footer extends Component {
@@ -27,9 +27,9 @@ export default class Footer extends Component {
     const { filter: selectedFilter, onShow } = this.props;
 
     return (
-      <a className={classnames({ selected: filter === selectedFilter })}
-        style={{ cursor: 'pointer' }}
-        onClick={() => onShow(filter)}>
+      <a className={ classnames({ selected: filter === selectedFilter }) }
+        style={ { cursor: 'pointer' } }
+        onClick={ () => onShow(filter) }>
         {title}
       </a>
     );
@@ -40,7 +40,7 @@ export default class Footer extends Component {
     if (completedCount > 0) {
       return (
         <button className="clear-completed"
-          onClick={onClearCompleted} >
+          onClick={ onClearCompleted } >
           Clear completed
         </button>
       );
@@ -53,7 +53,7 @@ export default class Footer extends Component {
         {this.renderTodoCount()}
         <ul className="filters">
           {[SHOW_ALL, SHOW_ACTIVE, SHOW_COMPLETED].map(filter =>
-            <li key={filter}>
+            <li key={ filter }>
               {this.renderFilterLink(filter)}
             </li>
           )}
@@ -64,11 +64,10 @@ export default class Footer extends Component {
   }
 }
 
-
 Footer.propTypes = {
   completedCount: PropTypes.number.isRequired,
   activeCount: PropTypes.number.isRequired,
   filter: PropTypes.string.isRequired,
   onClearCompleted: PropTypes.func.isRequired,
-  onShow: PropTypes.func.isRequired
+  onShow: PropTypes.func.isRequired,
 };

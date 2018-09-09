@@ -19,15 +19,14 @@ export default class Header extends Component {
     return (
       <header className="header">
         <h1>todos</h1>
-        <TodoTextInput newTodo
-          onSave={this.handleSave}
+        <TodoTextInput newTodo={ true }
+          onSave={ this.handleSave }
           placeholder="What needs to be done?" />
       </header>
     );
   }
 }
 
-
 Header.propTypes = {
-  addTodo: PropTypes.func.isRequired
+  addTodo: PropTypes.func.isRequired,
 };
