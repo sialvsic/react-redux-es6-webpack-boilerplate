@@ -41,5 +41,6 @@ $ yarn test
 - React.js from V15 to V16
 - Babel from V6 to V7
 - Webpack from V1 to V4
-- 
-
+- Eslint from V3 to V5
+- Enzyme from V2 to V3
+- Using npm to replace yarn

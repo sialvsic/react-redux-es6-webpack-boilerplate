@@ -1,4 +1,3 @@
-build/
-webpack.*.js
-jest/
-coverage/
+dist/
+config/
+template/
