@@ -49,4 +49,4 @@ $ npm test
 2018.10.20
 - 添加Webpack Prod的js hash配置
 - 限定Node版本到10.*
-- 
+- Add favicon.ico
