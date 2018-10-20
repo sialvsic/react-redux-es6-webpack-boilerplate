@@ -6,7 +6,11 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": "10.*"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
@@ -50,9 +54,10 @@
   },
   "scripts": {
     "start": "node ./examples/server.js",
-    "build": "webpack --config ./config/webpack.prod.config.js",
+    "babel": "babel src -d dist",
     "test": "mocha --require config/testHelper.js 'src/**/*.spec.js' ",
     "test:watch": "npm test -- --watch",
+    "build": "webpack --config ./config/webpack.prod.config.js",
     "eslint": "eslint . --fix",
     "precommit": "npm run eslint && npm test",
     "deploy-to-prod": "",

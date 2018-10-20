@@ -134,3 +134,4 @@ jspm_packages
 
 .idea/
 build/
+dist/

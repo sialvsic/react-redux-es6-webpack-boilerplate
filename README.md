@@ -1,6 +1,7 @@
 # What is this?
-
+这是一个前端React项目的模板
 > This project is aim to always using the all the latest configuration to run the `Todolist` app.
+
 
 Config for:
 - Webpack
@@ -44,3 +45,8 @@ $ npm test
 - Eslint from V3 to V5
 - Enzyme from V2 to V3
 - Using npm to replace yarn
+
+2018.10.20
+- 添加Webpack Prod的js hash配置
+- 限定Node版本到10.*
+- 
