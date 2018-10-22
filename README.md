@@ -21,6 +21,14 @@ Config for:
 
 
 ## how to start
+Git config
+```
+rm -rf .git
+git init
+git config user.name "sialvsic"
+git config user.email "sialvsic@outlook.com"
+```
+
 first
 ```
 $ npm install
@@ -50,3 +58,7 @@ $ npm test
 - 添加Webpack Prod的js hash配置
 - 限定Node版本到10.*
 - Add favicon.ico
+
+2018.10.23
+- 添加git配置
+- 修复eslint扫描文件
