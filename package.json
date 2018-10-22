@@ -59,7 +59,7 @@
     "test": "mocha --require config/testHelper.js 'src/**/*.spec.js' ",
     "test:watch": "npm test -- --watch",
     "build": "webpack --config ./config/webpack.prod.config.js",
-    "eslint": "eslint . --fix",
+    "eslint": "eslint ./src --fix",
     "precommit": "npm run eslint && npm test",
     "deploy-to-prod": "",
     "deploy-to-test": ""
