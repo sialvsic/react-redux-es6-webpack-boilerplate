@@ -1,19 +1,23 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
-    'webpack-hot-middleware/client?reload=true',
+    'webpack-hot-middleware/client',
     './src/index.js'
   ],
   devtool: 'inline-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Development',
+      template: './template/index.html',
+    }),
   ],
   output: {
-    filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/static/'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
