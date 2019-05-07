@@ -21,7 +21,13 @@ Config for:
 
 
 ## how to start
-Git config
+git clone
+```bash
+git clone git@github.com:sialvsic/react-project-boilerplate-project.git new-folder-name
+```
+
+git config
+
 ```
 rm -rf .git
 git init
