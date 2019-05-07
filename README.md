@@ -52,6 +52,10 @@ $ npm test
 ```
 
 ## version
+2019.05.05
+- get rid of the Deprecated react-router-redux, use connected-react-router instead
+- update package react, react-dom, react-router, redux
+
 2018.09.09 upgrade the project package to all latest version
 - React.js from V15 to V16
 - Babel from V6 to V7

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'connected-react-router';
 import App from './containers/App';
-import getStoreInstance from './store';
+import getStoreInstance, { history } from './store';
 import reducer from './reducers';
 import './Stylesheet/index.scss';
 
@@ -12,7 +13,9 @@ class Root extends Component {
   render() {
     return (
       <Provider store={ store }>
-        <App/>
+        <ConnectedRouter history={ history }>
+          <App/>
+        </ConnectedRouter>
       </Provider>);
   }
 }
