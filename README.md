@@ -2,6 +2,7 @@
 这是一个前端React项目的模板
 > This project is aim to always using the all the latest configuration to run the `Todolist` app.
 
+branch: master
 
 Config for:
 - Webpack
@@ -9,6 +10,9 @@ Config for:
   - dev-server
 - Babel
 - eslint
+
+branch: react-only
+Config only for supporting run react
 
 ## Feature
 
@@ -18,7 +22,6 @@ Config for:
 - Webpack
 - Babel
 - Enzyme
-
 
 ## how to start
 git clone
