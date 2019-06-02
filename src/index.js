@@ -1,22 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'connected-react-router';
 import App from './containers/App';
-import getStoreInstance, { history } from './store';
-import reducer from './reducers';
 import './Stylesheet/index.scss';
 
-const store = getStoreInstance(reducer);
 
 class Root extends Component {
   render() {
-    return (
-      <Provider store={ store }>
-        <ConnectedRouter history={ history }>
-          <App/>
-        </ConnectedRouter>
-      </Provider>);
+    return <App/>;
   }
 }
 
